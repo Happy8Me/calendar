@@ -1,0 +1,124 @@
+.main  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.btn {
+    margin: 10px 0 10px 10px;
+}
+.drop-list{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 25px;
+}
+.relative {
+    position: relative;
+    border: .1px solid rgb(133, 133, 133);
+    background-color: #ffffff;
+    height: 25px;
+}
+
+.error {
+	background-color: rgb(238 224 222);
+    justify-content: space-between;
+    color: rgb(187 69 61);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}	
+.error p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.error-close, .error-sign {
+	margin: 10px 20px;
+	font-size: 17px;
+}
+.error-close {
+	background: transparent;
+    color: rgb(187 69 61);
+    border: 0;
+    transition: .3s;
+}
+.error-close:focus{
+    outline: none;
+}
+.error-close:hover{
+    text-shadow: 0px 0px 5px rgb(187 69 61);
+}
+.error-sign {
+    line-height: 27px;
+    border: 1px solid;
+    border-radius: 50%;
+    height: 31px;
+    width: 31px;
+    display: block;
+    text-align: center;
+    background-color: rgb(187 69 61);
+    color: #eee0de;
+    font-weight: bold;
+}
+.form-field {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+.event-delete{
+    color: #6c757d;
+    font-size: 12px;
+    line-height: 24px;
+    transition: .3s;
+    cursor: pointer;
+}
+.event-delete:hover{
+    opacity: .3;
+}
+.event-delete:focus {
+    outline: none;
+}
+
+.popup, .popup button {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.popup{
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 300px;
+    background-color: #e2e3e5;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.popup button {
+    width: 35%;
+    transition: .2s;
+}
+.popup div {
+    width: 100%;
+}
+.popup button:focus {
+    outline: none;
+}
+.popup button:hover {
+    box-shadow: 0px 2px 5px grey;
+}
+.unval{
+    background-color: #b590b436;
+}
+.show {
+    display: flex;
+}
